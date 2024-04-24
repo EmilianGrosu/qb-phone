@@ -72,6 +72,7 @@ QB.Phone.Functions.SetupApplications = function(data) {
             }
             $(applicationSlot).html(icon+'<div class="app-unread-alerts">0</div>');
             $(applicationSlot).prop('title', app.tooltipText);
+            $(applicationSlot).attr('data-bs-original-title', app.tooltipText)
             $(applicationSlot).data('app', app.app);
 
             if (app.tooltipPos !== undefined) {
